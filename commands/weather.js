@@ -2,7 +2,7 @@ const config = require("../botconfig.json");
 var request = require("request")
 
 module.exports.run = async (bot, message, args) => {
-    str1 = args[0];
+    var str1 = args[0];
 
     var url = " https://api.openweathermap.org/data/2.5/weather?q="+str1 +",us&units=imperial&appid=" +config.weatherToken
 
