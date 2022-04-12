@@ -19,7 +19,7 @@ module.exports.run = async (bot, message, args) => {
             .setColor('RED');
     }
 
-    message.channel.send(embed);
+    message.channel.send({embeds: [embed]});
 };
 
 
